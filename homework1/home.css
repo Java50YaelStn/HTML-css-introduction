@@ -1,0 +1,40 @@
+*{margin: 0;
+padding: 0;}
+#div1>h1{
+    color: blueviolet;
+    padding-left:  30%;
+ }
+ #div1>p{
+    color: blue;
+    font-size: 20px;
+ }
+ #div1{
+    width: 30%;
+ }
+ header { 
+    background: linear-gradient(orange, white);
+    display: flex;
+    justify-content: center;
+}
+ul>li>a>img{
+    height: 20px;width: 20px;
+}
+li>a{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    margin-top: 5px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+    transition: 1s;
+}
+li:hover {
+box-shadow: 1px 1px 5px 2px;
+background-color: yellow;
+color: white;
+font-weight: 500;
+}
