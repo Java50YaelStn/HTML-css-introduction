@@ -95,8 +95,6 @@ h2 {
     height: 15vw;
     display: block;
     transform: scale(1.2);
- 
-   
 }
 .thumbnails-title {
     
@@ -114,6 +112,11 @@ h2 {
     font-size: 80%;
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(79, 4, 5), 0 0 5px darkblue;
     
+}
+audio{
+    height: 10px;
+    width: 120px;
+    background-color: rgb(237, 145, 145);
 }
 @media (min-width: 200px) and (max-width: 480px) {
     .main-class {
@@ -156,10 +159,10 @@ h2 {
  height: 40%;
 } 
 .thumbnails-image{
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 .thumbnails-title{
-    top: 81%;
+    top: 82%;
     width: 100%; 
     font-size: 25px;
     padding-bottom: 20px;
