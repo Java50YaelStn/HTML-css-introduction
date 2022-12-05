@@ -16,7 +16,6 @@ body {
     background-color: rgb(237, 145, 145);
     display: flex;
     flex-direction: column;
-   
     margin: 0;
 }
 .logo {
@@ -65,22 +64,23 @@ h2 {
 .thumbnails-list {
     display: flex;
     flex-wrap: wrap;
-    max-height: 37vh;
-    overflow-y: scroll;
+    /* max-height: 37vh; */
+   
     list-style: none;
     justify-content: space-around;
     padding-left: 0;
     margin-top: 3vh;
-    width: 120px;
+    width: 150px;
 }
 .thumbnails-item {
     border: solid 1.5px red;
     margin-top: 2vh;
+    margin-right: 10%;
     border-radius: 25%;
     overflow: hidden;
     width: 80%;
-    margin-left: 0.5vh;
-     position: relative;
+    /* margin-left: 0.5vh; */
+    position: relative;
    
 }
 .thumbnails-anchor {
@@ -115,57 +115,117 @@ h2 {
 }
 audio{
     height: 10px;
-    width: 120px;
+    width: 100%;
     background-color: rgb(237, 145, 145);
+    mix-blend-mode: luminosity;
 }
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 650px) and (max-width: 1300px) {
+    
     .main-class {
         flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
     .thumbnails-list {
-        order: -1;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        max-height: 80vh;
+        order: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 100vh;
         justify-content: flex-start;
+        width: 40%;
+        margin-left: 5%;
+        overflow-y: scroll;
     }
     .thumbnails-item {
         min-height: 18vw;
+        width: 80%;
     }
     .thumbnails-title {
         height: 3vw;
+        font-size: 150%;
+    }
+    .details-container{
+        width: 40%;
+        order: 2;
+        margin-right: 20%;
+        display: flex;
+        
+    }
+    .details-image{
+    width: 50vw;
+    height: 35vw;
+    margin-left: 30%;
+    }
+    .details-title{
+        margin-left: 25%;
+    }
+    span{
+        font-size: 100%;
     }
 
 }
-@media (min-width: 490px) and (max-width: 1281px) {
-.main-class{
-    flex-direction: row-reverse;
-    display: flex;
-    /* border: 5px solid black; */
-    justify-content: flex-end;
+@media (min-width: 300px) and (max-width: 500px) {
+.main-class {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
 }
-.details-container{
-    width: 60%;
-    /* border: 5px solid black; */
-    
+.details-container {
+display: flex;
+flex-direction: row; 
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%; 
+margin-bottom: 0;
 }
-.thumbnails-list {
-    max-height: 90vh;
-    flex-wrap: wrap;
-    width: 40%;
+.details-image {
+width: 90%;
+height: 100%; 
+justify-content: center;
+flex-wrap: wrap;
+margin-left: 5%;
+margin-right: 5%;
 
 }
-.thumbnails-item{
- height: 40%;
+
+section>img {
+    width: 100%;
+   
+    background-size: 50%;
 } 
-.thumbnails-image{
-    transform: scale(1.5);
+ .thumbnails-list {
+
+    display: flex;
+    flex-wrap: wrap;
+     width: 100%;
+    /* max-height: 37vh; */
+    list-style: none;
 }
+.thumbnails-item{
+ height: 30%;
+ width: 30%;
+ margin-right: 0;
+} 
+
 .thumbnails-title{
-    top: 82%;
+    top: 110%;
     width: 100%; 
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 20px;
     padding-top: 2px;
+    position: absolute;
 }
+.thumbnails-anchor{
+    position: relative;
+}
+main{
+    margin-bottom: 5%;
+}
+}
+@media (width: 375px){
+    .thumbnails-title{
+top: 80%;
+    }
 }
