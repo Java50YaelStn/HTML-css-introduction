@@ -111,7 +111,7 @@ h2 {
     
 }
 audio{
-    height: var(--var-margine);
+    height: var(--var-px);
     width: 100%;
     background-color: rgb(237, 145, 145);
     mix-blend-mode: luminosity;
