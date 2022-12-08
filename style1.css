@@ -29,8 +29,6 @@ body {
     font-family: 'Brush Script MT', cursive;
     color: #80043b;
     background-image: linear-gradient(0.25turn, white,rgb(237, 145, 145),rgb(201, 43, 43), brown);
-    
-   
 }
 h2 {
     margin-top: var(--var-px);
