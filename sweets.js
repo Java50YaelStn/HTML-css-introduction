@@ -50,9 +50,7 @@ r.classList.add("scroll");
 })
 
 }
-// let l=document.getElementById("hide-button");
-// console.log(l);
-// hideButtonElement.addEventListener("click",hideDetails);
+
 function function1 () {
 let w=document.getElementsByClassName("details-container")[0];
 w.innerHTML=" ";
