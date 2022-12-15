@@ -26,6 +26,7 @@ for (let i = 0; i < anchorElements.length; i++) {
 }
 
 let c=document.getElementsByClassName("thumbnails-item");
+
 for(let i=0; i< c.length; i++){
 c[i].addEventListener("click",function () {
 let r= document.getElementsByClassName("thumbnails-list")[0];
@@ -42,10 +43,19 @@ r.classList.add("scroll");
         k.classList.add("show");
     
     document.getElementsByClassName("details-container")[0].innerHTML= `<div class="details-frame">
+    <button id="hide-button" onclick="function1()" >X</button>
     <img src="${str}" id="NEWYEAR" class="details-image">
     <span class="details-title">${str1}</span>
     </div>`;
 })
 
 }
-hideButtonElement.addEventListener("click",hideDetails);
+// let l=document.getElementById("hide-button");
+// console.log(l);
+// hideButtonElement.addEventListener("click",hideDetails);
+function function1 () {
+let w=document.getElementsByClassName("details-container")[0];
+w.innerHTML=" ";
+
+    
+}
