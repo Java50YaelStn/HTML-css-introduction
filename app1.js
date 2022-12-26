@@ -35,9 +35,6 @@ function getCode(symbol) {
     const res = symbol <= '9'? +symbol : symbol.charCodeAt() - codeA + 10;
     return res;
 }
-
-
-
 let str1 = "-123a";
 // let str2 = "123";
 // let str22 = "Java";
