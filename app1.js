@@ -94,8 +94,6 @@ function getSymbol(digit) {
 }
 let num100 = -990500.07;
 let myStr100 = myToString(num100);
-console.log(myStr100);
-
 let str100 = num100.toString();
 // let myStr100 = myToString(num100);
 str100 = num100.toString(36);
