@@ -61,21 +61,12 @@ function myToString(number, base) {
     let res = '';
     base = base || 10;
 
-    number=String(number);
-    let start=number[0]==`-`?1:0;
-    let integer="";
-    let drob="";
-    let bool=true;
+    number1=String(number);
+    let a = number1[0]=='-'?"-":"";
+    let fr = number1.indexOf(".")==-1?"":number1.substring(number1.indexOf("."));
+ 
+    
 
-    for (let index = start; index < number.length; index++) {
-    if (number[index]==`.`) {bool=false; continue; } 
-    if (bool) {integer+=number[index]; }
-    else
-    {drob+=number[index];}    
-    }
-   
-    integer=Number(integer);
-    drob=Number(drob);
     number = Math.trunc(Math.abs(number));
     do {
         const digit = number % base;
@@ -85,7 +76,8 @@ function myToString(number, base) {
 
 
     }while(number);
-    return res;
+    return a+res+fr;
+
 
 }
 function getSymbol(digit) {
@@ -100,7 +92,10 @@ function getSymbol(digit) {
    return symbol;
 
 }
-let num100 = 990500;
+let num100 = -990500.07;
+let myStr100 = myToString(num100);
+console.log(myStr100);
+
 let str100 = num100.toString();
 // let myStr100 = myToString(num100);
 str100 = num100.toString(36);
