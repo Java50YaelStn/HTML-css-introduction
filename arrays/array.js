@@ -3,16 +3,20 @@
 let mas =[];
 for (let i = 0; i < 10; i++) 
    mas[i]=Math.round(Math.random());
-
+let ul1 = document.getElementById("ul1");
 function getHtmlUl(mas) {
    let mas_li=[];
-   let ul1 = document.getElementById("ul1");
+   
    for (let j = 0; j < mas.length; j++) {
       mas_li.push(`<li><div class="${mas[j]==0?"white":"black"}"></div></li>`);
    }
-   ul1.innerHTML = mas_li.join(" "); 
+   let html = mas_li.join(" ");
+   return html;
 }
-getHtmlUl(mas);
+
+ul1.innerHTML =getHtmlUl(mas);
+
+
 
 
 let matrix = [],mas2 = [],count=0;
