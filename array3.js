@@ -21,6 +21,8 @@ function evenAscOddDesc(array) {
    //(a,b)=>(a-b); toje samoe 4to i 4erez function
    //sort - sortiruet 
 let mas_ch1 = array.sort(function (a,b) {return b-a;}).filter(p=>p%2!=0);
+let mas3 = (array)=>array.sort((a,b)=>a-b).filter(p=>p%2==0).concat(array.sort((a,b)=>a-b).filter(p=>p%2!=0));
+//argument strelka i realizaciya
 return mas_ch.concat(mas_ch1);
 }
 let mas3 = evenAscOddDesc(mas);

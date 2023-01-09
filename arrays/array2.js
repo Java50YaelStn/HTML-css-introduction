@@ -13,13 +13,8 @@ function oddEvenSort(array) {
 }
 //task 1.3
 let mas2 = oddEvenSort(mas);
-function evenAscOddDesc(array) {
-   let mas_ch = array.sort(function (a,b) {return a-b;}).filter(p=>p%2==0);
-   
-let mas_ch1 = array.sort(function (a,b) {return b-a;}).filter(p=>p%2!=0);
-return mas_ch.concat(mas_ch1);
-}
-let mas3 = evenAscOddDesc(mas);
+let mas3 = (array)=>array.sort((a,b)=>a-b).filter(p=>p%2==0).concat(array.sort((a,b)=>a-b).filter(p=>p%2!=0));
+
 //task 2.1
 function getMin(array) {
    return array.reduce((a,b)=>a<b?a:b);
@@ -55,7 +50,7 @@ function getMinMaxAvg(array1) {
 let mas7 = getMinMaxAvg(mas);
 console.log(mas1);
 console.log(mas2);
-console.log(mas3);
+console.log(mas3(mas));
 console.log(mas4);
 console.log(mas5);
 console.log(mas6);
