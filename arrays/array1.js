@@ -29,6 +29,7 @@ function coloringString(str1,str2) {
 for (let i = 0; i < str2.length; i++) {
 if (str1.includes(str2.charAt(i))&&str1.charAt(i)!=str2.charAt(i)) {
     
+    
     arrayNewColor.push("yellow");
 }    
  else if (str1.charAt(i)==str2.charAt(i)) {
