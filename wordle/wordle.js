@@ -49,7 +49,23 @@ const wordsForGuess = ["pappy", "apple", "table", "gold", "silver", "index",
         console.log(trialWord);
         trials--;
         if (trials==0) {flGameOver=true;  
-            finishGame();           
+            alert(`game is over, press play-again`);
+            guessInputElement.value="";
+            finishGame();
+            
+        }
+        else if (trials>0 && word==trialWord) {
+            alert (`congrtulations, you won for the number of attempts ${trials}`);
+            guessInputElement.value="";
+            playAgainElement.style.cssText = `
+    display:block;
+    width:100px;
+    height:100px;
+    margin-left: 50%;
+    color: brown;
+    background-color:coral;
+    `;
+
         }
         trialsElement.innerHTML = `remained trials ${trials}`;
         if (trialWord.length != word.length) {
