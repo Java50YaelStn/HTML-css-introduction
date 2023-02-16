@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <header>
+      <h1>Прогноз погоды</h1>
+   </header>
+   <section id="form-section">
+     
+   </section> 
+   <section id="main-section">
+      <ul id="main-ul">
+         
+      </ul>
+   </section>
+ 
+   <script type="module" src="main.js"></script>
+  
+</body>
+<style>
+   body{
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background: url("https://images.theconversation.com/files/442675/original/file-20220126-17-1i0g402.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop");
+   }
+   #main-ul{
+      display: flex;
+      border: 1px solid black;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      justify-content: space-between;
+   }
+   .main-li{
+      border: 1px solid black;
+      list-style-type: none;
+      width: 23%;
+      text-align: center;
+
+   }
+   header{
+      line-height:200px ;
+      vertical-align: center;
+      letter-spacing: 5px;
+      text-align: center;
+      background: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.50),rgba(255, 255, 255, 0.5));
+      
+   }
+   h1{
+      color: white;
+   }
+   #data-form-id{
+      justify-content: space-around;
+      display: flex;
+
+
+   }
+   #data-form-id>input{
+      border: 2px solid black;
+      width: 300px;
+   }
+   button{  
+      color: white;
+      background: black;
+      transition: 1s;
+      padding: 10px 30px 10px 30px;
+    
+   }
+   button:hover{ 
+      color: black;
+      background: white;
+      box-shadow: 2px 2px 5px 5px black;
+     
+   }
+   .main-li{
+      font-size: 20px;
+      font-weight: 900;
+      color: rgb(5, 4, 4);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+</style>
+</html>
