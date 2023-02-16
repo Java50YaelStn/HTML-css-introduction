@@ -22,12 +22,12 @@ export class DataForm {
       },"");
 
         parentElement.innerHTML = `<form id="${FORM_ID}">
-        <select id="${SELECT_ID}" required >
+        <select id="${SELECT_ID}" required>
       <option value="Выбрать" hidden>Выбрать</option>${strCities}</select>
             <input type="date" id="${DATE_FROM_ID}" >
             <input type="date" id="${DATE_TO_ID}" >
-            <button type="button" id="btn" onclick="false" >Submit</button>
-            <button type="reset">Reset</button>
+            <button type="button" id="btn">Submit</button>
+            <button type="reset" id="rst" >Reset</button>
         </form>`;
 
     }
